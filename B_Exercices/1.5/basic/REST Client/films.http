@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:3000
+
+### GET Films
+GET {{baseUrl}}/films
+
+### GET FILMS with a minimum duration of 110 mins
+GET {{baseUrl}}/films/?minimum-duration=110
+
+### GET FILMS with a negativ minimum duration 
+GET {{baseUrl}}/films/?minimum-duration=-10
+
+### GET FILMS by ID WHERE ID = 1
+GET {{baseUrl}}/films/1
+
+### GET FILMS by ID WHERE ID = 3
+GET {{baseUrl}}/films/3
+
+### GET FILMS by ID WHERE ID is negative
+GET {{baseUrl}}/films/-3
+
+### GET FILMS by ID WHERE ID is too high
+GET {{baseUrl}}/films/1000
+
+### POST CREATE A NEW FILM 
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title": "Matrix",
+    "duration": 130,
+    "budget": 500000,
+    "link": "Alors mon reuf je vais pas me faire chier"
+}
