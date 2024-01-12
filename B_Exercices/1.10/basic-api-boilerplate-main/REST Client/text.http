@@ -1,0 +1,33 @@
+
+
+### READ ALL TEXTS
+GET http://localhost:3000/text
+
+@baseUrl = http://localhost:3000
+
+### GET TEXTS WHERE LEVEL = EASY
+GET {{baseUrl}}/text/?level=easy
+
+### GET TEXT WHERE LEVEL IS NOT MATCHING
+GET {{baseUrl}}/text/?level=inter
+
+### CREATE A TEXT
+POST {{baseUrl}}/text
+Content-Type: application/json
+
+{
+    "text" : "ceci est un text dans le quel je me pleins de ce cours que je n'aime pas bcp mais en vrai mtn cv mieux",
+    "level" : "easy"
+}
+
+### CREATE A TEXT WHERE THE LEVEL IS NOT ACCEPTED
+POST {{baseUrl}}/text
+Content-Type: application/json
+
+{
+    "text" : "Bon on va clairement pas se faire chier a chaque fois",
+    "level" : "slightly difficult"
+}
+
+### DELETE A PIZZA 
+DELETE {{baseUrl}}/text/ad06ef6a-ab92-4a9f-b04a-fa123da23fbe
