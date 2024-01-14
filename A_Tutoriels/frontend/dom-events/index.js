@@ -27,6 +27,6 @@ function onClickHandlerForBtnExtra() {
 }
 
 btn4.onclick = function() {
-  btn4.innerText = 'myBtn4 : You clicked on me : )';
+  btn4.innerHTML = 'myBtn4 : You clicked on me : )';
   console.log('onClickHandlerForBtn4::click');
 };
