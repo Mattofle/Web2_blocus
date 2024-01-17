@@ -1,11 +1,11 @@
 import AddMoviePage from '../Pages/AddMoviePage';
 import HomePage from '../Pages/HomePage';
-import ViewMooviePage from '../Pages/ViewMoviePage';
+import ViewMoviePage from '../Pages/ViewMoviePage';
 
 const routes = {
   '/': HomePage,
   '/add': AddMoviePage,
-  '/view' : ViewMooviePage
+  '/view' : ViewMoviePage
 };
 
 export default routes;
